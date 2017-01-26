@@ -508,11 +508,11 @@ Ce:"maze/marker.png",background:"maze/bg_panda.jpg",zd:!1,Cf:"#000",Zf:["maze/wi
 //Level 4
 [[0,0,0,0,0,0,0,0],
 [0,0,0,0,0,0,0,0],
-[0,0,0,0,0,0,0,0],
-[0,0,0,0,0,0,0,0],
-[0,0,0,0,0,0,0,0],
-[0,0,0,0,0,0,0,0],
-[0,0,0,0,0,0,0,0],
+[0,2,0,3,1,1,1,0],
+[0,1,0,0,0,0,1,0],
+[0,1,0,0,0,0,1,0],
+[0,1,0,0,0,0,1,0],
+[0,1,1,1,1,1,1,0],
 [0,0,0,0,0,0,0,0]],
 //Level 5
 [[0,0,0,0,0,0,0,0],
@@ -561,13 +561,13 @@ Ce:"maze/marker.png",background:"maze/bg_panda.jpg",zd:!1,Cf:"#000",Zf:["maze/wi
 [0,0,0,0,0,0,0,0]],
 //Level 10
 [[0,0,0,0,0,0,0,0],
-[0,1,1,1,1,1,1,0],
-[0,1,0,0,0,0,1,0],
-[0,1,1,0,0,1,1,0],
-[0,0,1,0,0,1,0,0],
-[0,0,1,0,0,1,0,0],
-[2,1,1,0,0,1,1,3],
-[0,0,0,0,0,0,0,0]]]
+[1,1,1,1,1,0,0,1],
+[1,0,1,0,1,0,0,1],
+[0,0,1,1,1,0,0,1],
+[0,0,1,0,1,0,0,1],
+[2,1,1,1,1,1,1,1],
+[0,0,0,0,1,0,0,0],
+[0,0,0,0,1,1,0,0]]]
 [F],pn=on.length,qn=on[0].length,rn=50*qn,sn=50*pn,tn=0,un=[],vn={10010:[4,0],10001:[3,3],11E3:[0,1],10100:[0,2],11010:[4,1],10101:[3,2],10110:[0,0],10011:[2,0],11001:[4,2],11100:[2,3],11110:[1,1],10111:[1,0],11011:[2,1],11101:[1,2],11111:[2,2],null0:[4,3],null1:[3,0],null2:[3,1],null3:[0,3],null4:[1,3]};
 function wn(){function a(a,b){return 0>a||a>=qn||0>b||b>=pn?"0":0==on[b][a]?"0":"1"}var b=document.getElementById("svgMaze"),c=50*Math.max(pn,qn);b.setAttribute("viewBox","0 0 "+c+" "+c);c=document.createElementNS("http://www.w3.org/2000/svg","rect");c.setAttribute("width",rn);c.setAttribute("height",sn);c.setAttribute("fill","#F1EEE7");c.setAttribute("stroke-width",1);c.setAttribute("stroke","#CCB");b.appendChild(c);if(ln.background){var d=document.createElementNS("http://www.w3.org/2000/svg","image");
 d.setAttributeNS("http://www.w3.org/1999/xlink","xlink:href",ln.background);d.setAttribute("height",sn);d.setAttribute("width",rn);d.setAttribute("x",0);d.setAttribute("y",0);b.appendChild(d)}if(ln.zd){for(c=0;c<pn;c++){var e=document.createElementNS("http://www.w3.org/2000/svg","line");e.setAttribute("y1",50*c+25.5);e.setAttribute("x2",rn);e.setAttribute("y2",50*c+25.5);e.setAttribute("stroke",ln.zd);e.setAttribute("stroke-width",1);b.appendChild(e)}for(c=0;c<qn;c++)e=document.createElementNS("http://www.w3.org/2000/svg",
